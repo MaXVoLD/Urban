@@ -1,0 +1,8 @@
+my_string = input("Введите текст: ")
+string = my_string.replace(" ", "")
+print('Количество символов в строке:', len(string))
+print('Строка в верхнем регистре:', my_string.upper())
+print('Строка в нижнем регистре:', my_string.lower())
+print('Строка без пробелов:', string)
+print('Первый символ строки:', string[0])
+print('Последний символ строки:', string[-1])
