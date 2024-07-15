@@ -6,12 +6,10 @@ def fibonacci():
               f'\nПовторите попытку ниже.\n')
         fibonacci()
     else:
-        count = 0
         a, b = 0, 1
-        while count <= n - 1:
+        for i in range(n):
             print(b, end=' ')
             a, b = b, b + a
-            count += 1
 
 
 fibonacci()
