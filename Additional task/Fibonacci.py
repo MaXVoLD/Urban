@@ -1,9 +1,12 @@
 def fibonacci():
-    n = int(input('Введите любое число от 1 до 100: '))
-    if 0 > n >= 100:
+    n = int(input('Введите необходимое количество чисел'
+                  '\nв последовательности (от 1 до 100): '))
+    if n < 1 or n > 100:
         print(f'Число {n} Не соответствует условиям.'
               f'\nПовторите попытку ниже.\n')
         fibonacci()
+    elif n == 1:
+        print(n)
     else:
         count = 0
         a, b = 0, 1
@@ -11,5 +14,5 @@ def fibonacci():
             print(b, end=' ')
             a, b = b, b + a
             count += 1
-    print('\nКод завершён!')
 fibonacci()
+print('\nКод успешно завершён!')
