@@ -5,12 +5,10 @@ def fibonacci():
         print(f'Число {n} Не соответствует условиям.'
               f'\nПовторите попытку ниже.\n')
         fibonacci()
-    elif n == 1:
-        print(n)
     else:
         count = 0
         a, b = 0, 1
-        while count <= n:
+        while count <= n-1:
             print(b, end=' ')
             a, b = b, b + a
             count += 1
