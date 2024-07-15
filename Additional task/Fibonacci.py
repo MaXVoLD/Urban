@@ -8,9 +8,11 @@ def fibonacci():
     else:
         count = 0
         a, b = 0, 1
-        while count <= n-1:
+        while count <= n - 1:
             print(b, end=' ')
             a, b = b, b + a
             count += 1
+
+
 fibonacci()
 print('\nКод успешно завершён!')
