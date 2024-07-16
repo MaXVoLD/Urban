@@ -1,14 +1,11 @@
-def get_matrix():
-    n = int(input('Введите количество строк: '))
-    m = int(input('Введите количество столбцов: '))
-    value = int(input('Введите любое число: '))
+def get_matrix(n, m, value):
     matrix = []
     for i in range(1, n + 1):
         list_ = []
         matrix.append(list_)
-        for j in (1, m):
+        for j in range(1, m + 1):
             list_.append(value)
     print(matrix)
 
 
-get_matrix()
+get_matrix(2, 4, 10)
