@@ -7,6 +7,3 @@ def divide(first, second):
         return result
     else:
         return inf
-
-
-print(divide(1, 0))

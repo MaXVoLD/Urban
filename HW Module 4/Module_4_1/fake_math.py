@@ -4,6 +4,3 @@ def divide(first, second):
         return result
     else:
         return 'Ошибка'
-
-
-print(divide(1, 0))
