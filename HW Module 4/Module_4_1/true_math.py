@@ -2,8 +2,4 @@ from math import inf  # Импорт бесконечнечности из би�
 
 
 def divide(first, second):
-    if second != 0:
-        result = first / second
-        return result
-    else:
-        return inf
+    return first / second if second != 0 else inf
