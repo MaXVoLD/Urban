@@ -1,14 +1,18 @@
 def type_int(value, num):  # Функция для проверки типа данных
-    if isinstance(num, int):
-        return num
-    else:
+    def break_code(numb):
+        return num if isinstance(numb, int) else False
+
+    if not break_code(num):
         print(f'''
-        
-В передаваемом значении "{num}"
-строчки "{value}"
-указан неверный тип данных!
-''')
-        return False
+Выполнение программы прервано:      
+В качестве количесnва этажей
+передано значение "{num}" => {type(num)}
+
+{value}
+        ''')
+        exit()
+    else:
+        return break_code(num)
 
 
 class House:
