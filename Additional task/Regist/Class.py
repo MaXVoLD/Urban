@@ -42,8 +42,6 @@ class Check:
         self.cPassword = None
         self.login = None
         self.password = None
-        self.cPassword = None
-        self.checkLogin = 1  # Дополнительная переменная для проверки
 
     def check_password(self, password, cPassword):  # Проверка пароля на соответствие параметрам
         check = []  # Дополнительный список для проверки
