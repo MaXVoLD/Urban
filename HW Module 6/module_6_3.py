@@ -3,11 +3,9 @@ class Horse:
     Класс описывающий лошадь
     '''
 
-    def __init__(self, y_distance):
+    def __init__(self):
         self.x_distance = 0  # пройденный путь.
         self.sound = 'Frrr'  # звук, который издаёт лошадь.
-        super().__init__(y_distance)
-        super().fly()
 
     def run(self, dx):  # изменение дистанции на значение dx
         self.x_distance += dx
@@ -30,9 +28,6 @@ class Pegasus(Horse, Eagle):
     '''
     Класс описывающий пегаса
     '''
-
-    def __init__(self, y_distance):
-        super().__init__(y_distance)
 
     def move(self, dx, dy):  # изменение дистанции на значениe (dx, dy)
         super().fly(dy)  # Явно указываем, что хотим вызвать метод fly() класса Eagle
