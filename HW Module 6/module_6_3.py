@@ -29,6 +29,10 @@ class Pegasus(Horse, Eagle):
     Класс описывающий пегаса
     '''
 
+    def __init__(self):  # Инициализируем рожительские классы
+        Horse.__init__(self)
+        Eagle.__init__(self)
+
     def move(self, dx, dy):  # изменение дистанции на значениe (dx, dy)
         super().fly(dy)  # Явно указываем, что хотим вызвать метод fly() класса Eagle
         super().run(dx)  # Явно указываем, что хотим вызвать метод run() класса Horse
